@@ -1,0 +1,657 @@
+[
+  {
+    "PackageId": "HarfBuzzSharp",
+    "PackageVersion": "8.3.1.1",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "HarfBuzzSharp is a cross-platform OpenType text shaping engine for .NET platforms.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "HarfBuzzSharp.NativeAssets.Linux",
+    "PackageVersion": "8.3.1.1",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "HarfBuzzSharp is a cross-platform OpenType text shaping engine for .NET platforms.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "HarfBuzzSharp.NativeAssets.Win32",
+    "PackageVersion": "8.3.1.1",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "HarfBuzzSharp is a cross-platform OpenType text shaping engine for .NET platforms.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Bcl.Cryptography",
+    "PackageVersion": "8.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides support for some cryptographic primitives for .NET Framework and .NET Standard.\n\nCommonly Used Types:\nSystem.Security.Cryptography.SP800108HmacCounterKdf",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Data.SqlClient",
+    "PackageVersion": "7.1.1",
+    "PackageProjectUrl": "https://aka.ms/sqlclientproject",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "The current data provider for SQL Server and Azure SQL databases. This has replaced System.Data.SqlClient. These classes provide access to SQL and encapsulate database-specific protocols, including tabular data stream (TDS).\n\n      Commonly Used Types:\n      Microsoft.Data.SqlClient.SqlConnection\n      Microsoft.Data.SqlClient.SqlException\n      Microsoft.Data.SqlClient.SqlParameter\n      Microsoft.Data.SqlClient.SqlDataReader\n      Microsoft.Data.SqlClient.SqlCommand\n      Microsoft.Data.SqlClient.SqlTransaction\n      Microsoft.Data.SqlClient.SqlParameterCollection\n      Microsoft.Data.SqlClient.SqlClientFactory\n\n      When using NuGet 3.x this package requires at least version 3.4.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Data.SqlClient.Extensions.Abstractions",
+    "PackageVersion": "7.1.1",
+    "PackageProjectUrl": "https://aka.ms/sqlclientproject",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Microsoft.Data.SqlClient Extensions Abstractions",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Data.SqlClient.Internal.Logging",
+    "PackageVersion": "7.1.1",
+    "PackageProjectUrl": "https://aka.ms/sqlclientproject",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Microsoft.Data.SqlClient Internal Logging - ETW EventSource for SqlClient tracing\n      and diagnostics.\n\n      This package is for internal use by other Microsoft.Data.SqlClient\n      packages only and should not be referenced directly by application code.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Data.SqlClient.SNI.runtime",
+    "PackageVersion": "7.1.0",
+    "PackageProjectUrl": "https://aka.ms/sqlclientproject",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Internal implementation package not meant for direct consumption. Please do not reference directly.\n\nWhen using NuGet 3.x this package requires at least version 3.4.",
+    "License": "LICENSE.txt",
+    "LicenseUrl": "https://aka.ms/deprecateLicenseUrl",
+    "LicenseInformationOrigin": 5
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Caching.Abstractions",
+    "PackageVersion": "8.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Caching abstractions for in-memory cache and distributed cache.\n\nCommonly Used Types:\nMicrosoft.Extensions.Caching.Distributed.IDistributedCache\nMicrosoft.Extensions.Caching.Memory.IMemoryCache",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Caching.Memory",
+    "PackageVersion": "8.0.1",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "In-memory cache implementation of Microsoft.Extensions.Caching.Memory.IMemoryCache.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Configuration",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Implementation of key-value pair based configuration for Microsoft.Extensions.Configuration. Includes the memory configuration provider.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Configuration.Abstractions",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Abstractions of key-value pair based configuration.\n\nCommonly Used Types:\nMicrosoft.Extensions.Configuration.IConfiguration\nMicrosoft.Extensions.Configuration.IConfigurationBuilder\nMicrosoft.Extensions.Configuration.IConfigurationProvider\nMicrosoft.Extensions.Configuration.IConfigurationRoot\nMicrosoft.Extensions.Configuration.IConfigurationSection",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Configuration.FileExtensions",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Extension methods for configuring file-based configuration providers for Microsoft.Extensions.Configuration.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Configuration.Json",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "JSON configuration provider implementation for Microsoft.Extensions.Configuration.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Configuration.UserSecrets",
+    "PackageVersion": "6.0.1",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "User secrets configuration provider implementation for Microsoft.Extensions.Configuration.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+    "PackageVersion": "8.0.2",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Abstractions for dependency injection.\n\nCommonly Used Types:\nMicrosoft.Extensions.DependencyInjection.IServiceCollection",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.FileProviders.Abstractions",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Abstractions of files and directories.\n\nCommonly Used Types:\nMicrosoft.Extensions.FileProviders.IDirectoryContents\nMicrosoft.Extensions.FileProviders.IFileInfo\nMicrosoft.Extensions.FileProviders.IFileProvider",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.FileProviders.Physical",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "File provider for physical files for Microsoft.Extensions.FileProviders.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.FileSystemGlobbing",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "File system globbing to find files matching a specified pattern.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Logging.Abstractions",
+    "PackageVersion": "8.0.2",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Logging abstractions for Microsoft.Extensions.Logging.\n\nCommonly Used Types:\nMicrosoft.Extensions.Logging.ILogger\nMicrosoft.Extensions.Logging.ILoggerFactory\nMicrosoft.Extensions.Logging.ILogger\u003CTCategoryName\u003E\nMicrosoft.Extensions.Logging.LogLevel\nMicrosoft.Extensions.Logging.Logger\u003CT\u003E\nMicrosoft.Extensions.Logging.LoggerMessage\nMicrosoft.Extensions.Logging.Abstractions.NullLogger",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Options",
+    "PackageVersion": "8.0.2",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides a strongly typed way of specifying and accessing settings using dependency injection.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.Extensions.Primitives",
+    "PackageVersion": "8.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Primitives shared by framework extensions. Commonly used types include:\n\nCommonly Used Types:\nMicrosoft.Extensions.Primitives.IChangeToken\nMicrosoft.Extensions.Primitives.StringValues\nMicrosoft.Extensions.Primitives.StringSegment",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.Abstractions",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "A package containing thin abstractions for Microsoft.IdentityModel.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.JsonWebTokens",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Includes types that provide support for creating, serializing and validating JSON Web Tokens. This is a newer, faster version of System.IdentityModel.Tokens.Jwt that has additional functionality.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.Logging",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Includes Event Source based logging support.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.Protocols",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides base protocol support for OpenIdConnect and WsFederation.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Includes types that provide support for OpenIdConnect protocol.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.IdentityModel.Tokens",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Includes types that provide support for SecurityTokens, Cryptographic operations: Signing, Verifying Signatures, Encryption.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Microsoft.SqlServer.Server",
+    "PackageVersion": "1.0.0",
+    "PackageProjectUrl": "https://aka.ms/sqlclientproject",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "This is a helper library for Microsoft.Data.SqlClient enabling cross framework support of UDT types.\n    \nAvailable Types:\nMicrosoft.SqlServer.Server.IBinarySerializer\nMicrosoft.SqlServer.Server.InvalidUdtException\nMicrosoft.SqlServer.Server.SqlFacetAttribute\nMicrosoft.SqlServer.Server.SqlFunctionAttribute\nMicrosoft.SqlServer.Server.SqlMethodAttribute\nMicrosoft.SqlServer.Server.SqlUserDefinedAggregateAttribute\nMicrosoft.SqlServer.Server.SqlUserDefinedTypeAttribute\nMicrosoft.SqlServer.Server.DataAccessKind\nMicrosoft.SqlServer.Server.SystemDataAccessKind\nMicrosoft.SqlServer.Server.Format",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "OpenTK",
+    "PackageVersion": "4.8.2",
+    "PackageProjectUrl": "https://github.com/opentk/opentk",
+    "Copyright": "Copyright (c) 2006 - 2020 Stefanos Apostolopoulos \u003Cstapostol@gmail.com\u003E for the Open Toolkit library.",
+    "Authors": "Team OpenTK",
+    "Description": "The Open Toolkit is set of fast, low-level C# bindings for OpenGL, OpenGL ES, OpenAL and OpenCL. It runs on all major platforms and powers hundreds of apps, games and scientific research.  It provides bindings for GLFW windowing, input and a game loop, and is the perfect start for your own game engine.  OpenTK comes with simple and easy to follow tutorials for learning *modern* OpenGL. These are written by the community and represent all of the best practices to get you started.  Learn how to use OpenTK here:  https://opentk.net/learn/index.html  Sample projects that accompany the tutorial can be found here:  https://github.com/opentk/LearnOpenTK  We have a very active discord server, if you need help, want to help, or are just curious, come join us!  https://discord.gg/6HqD48s",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "OpenTK.Audio.OpenAL",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "OpenAL bindings for dotnet from the Khronos openAL c library.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Compute",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "OpenCL Compute Bindings for dotnet from the Khronos OpenCL C Library.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Core",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "Holds core functionality used by other OpenTK packages.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.GLControl",
+    "PackageVersion": "4.0.1",
+    "PackageProjectUrl": "https://github.com/opentk/GLControl",
+    "Copyright": "Copyright (c) 2024 Team OpenTK",
+    "Authors": "Team OpenTK",
+    "Description": "A WinForms control designed to wrap the OpenTK 4.x APIs.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "OpenTK.Graphics",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "GLes11, GLes20, GLes30, GL2, and GL4 bindings for dotnet from the Khronos openGL c library.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Input",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "Hid/Controller input library.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Mathematics",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "A basic mathematics library developed primarily for rendering in 3d and 2d.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.redist.glfw",
+    "PackageVersion": "3.3.8.39",
+    "PackageProjectUrl": "https://www.glfw.org/",
+    "Authors": "Team OpenTK",
+    "Description": "GLFW redistributables for OpenTK.",
+    "License": "Zlib",
+    "LicenseUrl": "https://aka.ms/deprecateLicenseUrl",
+    "LicenseInformationOrigin": 5
+  },
+  {
+    "PackageId": "OpenTK.Windowing.Common",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "Common functionality for OpenTK.Windowing.* packages.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Windowing.Desktop",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "An abstraction over OpenTK.GraphicsLibraryFramework to provide a ready-to-go easy-to-use windowing and input abstraction.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "OpenTK.Windowing.GraphicsLibraryFramework",
+    "PackageVersion": "4.8.2",
+    "Authors": "Team OpenTK",
+    "Description": "GLFW bindings for c# from the cpp GLFW library.",
+    "ValidationErrors": [
+      {
+        "Error": "No license information found",
+        "Context": "D:\\C#\\Temperature_Modbus\\Temperature_Modbus\\Temperature_Modbus.csproj"
+      }
+    ],
+    "LicenseInformationOrigin": 2
+  },
+  {
+    "PackageId": "ScottPlot",
+    "PackageVersion": "5.1.59",
+    "PackageProjectUrl": "https://scottplot.net/",
+    "Copyright": "Copyright (c) Scott Harden / Harden Technologies, LLC",
+    "Authors": "Scott Harden",
+    "Description": "ScottPlot is a free and open-source plotting library for .NET. This package can be used to create static plots, and user controls for displaying plots interactively are available as separate NuGet packages.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "ScottPlot.WinForms",
+    "PackageVersion": "5.1.59",
+    "PackageProjectUrl": "https://scottplot.net/",
+    "Copyright": "Copyright (c) Scott Harden / Harden Technologies, LLC",
+    "Authors": "Scott Harden",
+    "Description": "User controls for displaying interactive plots in Windows Forms applications",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "SkiaSharp is a cross-platform 2D graphics API for .NET platforms based on Google\u0027s Skia Graphics Library.\nIt provides a comprehensive 2D API that can be used across mobile, server and desktop models to render images.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp.HarfBuzz",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "This package adds text shaping support to SkiaSharp via HarfBuzz.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp.NativeAssets.Linux.NoDependencies",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "SkiaSharp is a cross-platform 2D graphics API for .NET platforms based on Google\u0027s Skia Graphics Library.\nIt provides a comprehensive 2D API that can be used across mobile, server and desktop models to render images.\n\nThis variation of the Linux native assets includes the build of libSkiaSharp.so that does not have any dependencies on third-party libraries.\n\nThe complete dependency list is:\n - libpthread.so.0\n - libdl.so.2\n - libm.so.6\n - libc.so.6\n - ld-linux-x86-64.so.2\n\nThe excluded dependencies are:\n - Fontconfig",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp.NativeAssets.Win32",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "SkiaSharp is a cross-platform 2D graphics API for .NET platforms based on Google\u0027s Skia Graphics Library.\nIt provides a comprehensive 2D API that can be used across mobile, server and desktop models to render images.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp.Views.Desktop.Common",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "SkiaSharp Views \u0026 Layers are a set of platform-specific views and containers that can be used to draw on the screen.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "SkiaSharp.Views.WindowsForms",
+    "PackageVersion": "3.119.0",
+    "PackageProjectUrl": "https://go.microsoft.com/fwlink/?linkid=868515",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "SkiaSharp Views \u0026 Layers are a set of platform-specific views and containers that can be used to draw on the screen.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Configuration.ConfigurationManager",
+    "PackageVersion": "8.0.1",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides types that support using XML configuration files (app.config). This package exists only to support migrating existing .NET Framework code that already uses System.Configuration. When writing new code, use another configuration system instead, such as Microsoft.Extensions.Configuration.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Diagnostics.EventLog",
+    "PackageVersion": "8.0.1",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides the System.Diagnostics.EventLog class, which allows the applications to use the Windows event log service.\n\nCommonly Used Types:\nSystem.Diagnostics.EventLog",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.IdentityModel.Tokens.Jwt",
+    "PackageVersion": "8.16.0",
+    "PackageProjectUrl": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Includes types that provide support for creating, serializing and validating JSON Web Tokens. As of IdentityModel 7x, this is a legacy tool that should be replaced with Microsoft.IdentityModel.JsonWebTokens.",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Runtime.CompilerServices.Unsafe",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides the System.Runtime.CompilerServices.Unsafe class, which provides generic, low-level functionality for manipulating pointers.\n\nCommonly Used Types:\nSystem.Runtime.CompilerServices.Unsafe",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Security.Cryptography.Pkcs",
+    "PackageVersion": "8.0.1",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides support for PKCS and CMS algorithms.\n\nCommonly Used Types:\nSystem.Security.Cryptography.Pkcs.EnvelopedCms",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Security.Cryptography.ProtectedData",
+    "PackageVersion": "8.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides access to Windows Data Protection Api.\n\nCommonly Used Types:\nSystem.Security.Cryptography.DataProtectionScope\nSystem.Security.Cryptography.ProtectedData",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Text.Encodings.Web",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).\n\nCommonly Used Types:\nSystem.Text.Encodings.Web.HtmlEncoder\nSystem.Text.Encodings.Web.UrlEncoder\nSystem.Text.Encodings.Web.JavaScriptEncoder",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Text.Json",
+    "PackageVersion": "6.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "Provides high-performance and low-allocating types that serialize objects to JavaScript Object Notation (JSON) text and deserialize JSON text to objects, with UTF-8 support built-in. Also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM), that is read-only, for random access of the JSON elements within a structured view of the data.\n\nCommonly Used Types:\nSystem.Text.Json.JsonSerializer\nSystem.Text.Json.JsonDocument\nSystem.Text.Json.JsonElement\nSystem.Text.Json.Utf8JsonWriter\nSystem.Text.Json.Utf8JsonReader",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "System.Threading.RateLimiting",
+    "PackageVersion": "8.0.0",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "Description": "APIs to help manage rate limiting.\n\nCommonly Used Types:\nSystem.Threading.RateLimiting.RateLimiter\nSystem.Threading.RateLimiting.ConcurrencyLimiter\nSystem.Threading.RateLimiting.TokenBucketRateLimiter\nSystem.Threading.RateLimiting.RateLimitLease",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  }
+]
