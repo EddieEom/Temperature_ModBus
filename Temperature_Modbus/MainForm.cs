@@ -1271,6 +1271,7 @@ namespace Temperature_Modbus
                 using var command = connection.CreateCommand();
                 command.CommandTimeout = 5;
 
+                // 활성 알람을 확인 처리하는 SQL 쿼리 작성
                 command.CommandText = """
                     UPDATE dbo.AlarmEvent
                     SET AcknowledgedAt = SYSUTCDATETIME()
@@ -1308,17 +1309,21 @@ namespace Temperature_Modbus
             }
         }
 
+        // 카카오 알람 발송을 위한 백그라운드 작업
         private async Task RunKakaoWorkerAsync(
             CancellationTokenSource ownerCts)
         {
             CancellationToken token = ownerCts.Token;
 
+            // PeriodicTimer를 사용하여 2초마다 반복 작업 수행
             using var timer = new PeriodicTimer(TimeSpan.FromSeconds(2));
 
             try
             {
+                // 카카오 알람 발송 작업을 반복 수행
                 do
                 {
+                    // 작업 취소 요청이 들어오면 OperationCanceledException 예외를 발생시켜 반복 작업을 종료한다.
                     token.ThrowIfCancellationRequested();
 
                     int deviceId = currentDeviceId;
@@ -1326,8 +1331,10 @@ namespace Temperature_Modbus
                     if (deviceId <= 0)
                         continue;
 
+                    // 카카오 알람 발송 작업 수행
                     try
                     {
+                        // SendPendingKakaoAlarmAsync() 메서드를 호출하여 대기 중인 카카오 알람을 발송하고, 발송 결과를 반환받는다.
                         bool processed =
                             await SendPendingKakaoAlarmAsync(deviceId, token);
 
@@ -1373,17 +1380,19 @@ namespace Temperature_Modbus
             }
         }
 
-
+        // 대기 중인 카카오 알람을 발송하는 메서드
         private async Task<bool> SendPendingKakaoAlarmAsync(
             int deviceId,
             CancellationToken token)
         {
+            // 카카오 알람 발송을 위해 사용자 비밀에서 토큰을 읽어온다.
             var configuration = new ConfigurationBuilder()
             .AddUserSecrets<MainForm>(optional: true)
             .Build();
 
             string? accessToken = configuration["Kakao:AccessToken"];
 
+            // 사용자 비밀에 토큰이 없으면 발송하지 않고 상태 표시만 한다.
             if (string.IsNullOrWhiteSpace(accessToken))
             {
                 if (!isClosing && !IsDisposed)
@@ -1394,7 +1403,7 @@ namespace Temperature_Modbus
 
             long alarmId;
             string message;
-
+            // DB에서 발송 대기 중인 알람을 가져와서 발송 처리한다.
             using (var connection = new SqlConnection(DbConnectionString))
             {
                 await connection.OpenAsync(token);
@@ -1402,6 +1411,9 @@ namespace Temperature_Modbus
                 using var command = connection.CreateCommand();
                 command.CommandTimeout = 5;
 
+                // 발송 대기 중인 알람을 가져오는 SQL 쿼리 작성 (UPDLOCK, READPAST, ROWLOCK 힌트 사용)
+                // 저장 프로시저 만들 필요가 없는 이유 : 단순 조회 및 업데이트.
+                // 저장 프로시저를 만들면 유지보수가 어려워질 수 있음.
                 command.CommandText = """
                     ;WITH Target AS
                     (
@@ -1439,15 +1451,17 @@ namespace Temperature_Modbus
                 alarmId = Convert.ToInt64(result);
 
                 using var detailCommand = connection.CreateCommand();
+
+                // 발송할 알람의 상세 정보를 가져오는 SQL 쿼리 작성
                 detailCommand.CommandText = """
-            SELECT
-                d.DeviceName,
-                a.TriggerTemperature,
-                a.OccurredAt
-            FROM dbo.AlarmEvent AS a
-            INNER JOIN dbo.Device AS d ON d.DeviceId = a.DeviceId
-            WHERE a.AlarmId = @AlarmId;
-            """;
+                SELECT
+                    d.DeviceName,
+                    a.TriggerTemperature,
+                    a.OccurredAt
+                FROM dbo.AlarmEvent AS a
+                INNER JOIN dbo.Device AS d ON d.DeviceId = a.DeviceId
+                WHERE a.AlarmId = @AlarmId;
+                """;
 
                 detailCommand.Parameters.Add("@AlarmId", SqlDbType.BigInt).Value =
                     alarmId;
@@ -1460,6 +1474,7 @@ namespace Temperature_Modbus
                 DateTime occurredAt = DateTime.SpecifyKind(
                     reader.GetDateTime(2), DateTimeKind.Utc).ToLocalTime();
 
+                // 카카오 알람 메시지 작성 (장비 이름, 발생 온도, 발생 시각 포함)
                 message =
                     $"[고온 알람 #{alarmId}]\n" +
                     $"장비: {reader.GetString(0)}\n" +
@@ -1472,11 +1487,13 @@ namespace Temperature_Modbus
 
             try
             {
+                // 카카오톡 메시지 발송을 위한 HttpClient를 생성하고, 10초 제한을 두어 발송 요청을 수행한다.
                 using var sendCts =
                     CancellationTokenSource.CreateLinkedTokenSource(token);
 
                 sendCts.CancelAfter(TimeSpan.FromSeconds(10));
 
+                // 카카오톡 메시지 템플릿 JSON 생성 (텍스트 메시지, 링크 포함)
                 string templateJson = JsonSerializer.Serialize(new
                 {
                     object_type = "text",
@@ -1489,25 +1506,30 @@ namespace Temperature_Modbus
                     button_title = "개발자 사이트"
                 });
 
+                // HttpRequestMessage를 생성하여 카카오톡 메시지 발송 API에 POST 요청을 보낸다.
                 using var request = new HttpRequestMessage(
                     HttpMethod.Post,
                     "https://kapi.kakao.com/v2/api/talk/memo/default/send");
 
+                // Authorization 헤더에 Bearer 토큰을 설정하여 카카오톡 API 인증을 수행한다.
                 request.Headers.Authorization =
                     new AuthenticationHeaderValue("Bearer", accessToken.Trim());
 
+                // 폼 URL 인코딩된 콘텐츠를 요청 본문에 설정하여 템플릿 JSON을 전송한다.
                 request.Content = new FormUrlEncodedContent(
                     new Dictionary<string, string>
                     {
                         ["template_object"] = templateJson
                     });
 
+                // HttpClient를 사용하여 비동기적으로 요청을 보내고, 응답을 받는다.
                 using var response =
                     await kakaoHttpClient.SendAsync(request, sendCts.Token);
 
                 string body =
                     await response.Content.ReadAsStringAsync(sendCts.Token);
 
+                // 응답이 성공적인 경우, JSON 응답을 파싱하여 result_code가 0인지 확인하여 발송 성공 여부를 판단한다.
                 if (response.IsSuccessStatusCode)
                 {
                     using var json = JsonDocument.Parse(body);
@@ -1543,6 +1565,7 @@ namespace Temperature_Modbus
 
             using var saveCommand = saveConnection.CreateCommand();
 
+            // 발송 결과를 DB에 기록하는 SQL 쿼리 작성 (발송 성공 시 SentAt에 현재 시각 기록, 실패 시 LastError에 오류 메시지 기록)
             saveCommand.CommandText = """
             UPDATE dbo.AlarmNotification
             SET SendStatus = @Status,
