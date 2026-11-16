@@ -41,6 +41,10 @@ namespace Temperature_Modbus
         private readonly List<double> temperatureTimes = new();
         private readonly List<double> temperatureValues = new();
 
+
+        // 보안상 위험할듯. DB 접근 정보 유출될 수도 있음.
+        //private const string DbConnectionString = @"Server=.\SQLEXPRESS;Database=......;" + "Integrated Security=True;Encrypt=True;" + "TrustServerCertificate=True;Connect Timeout=5;";
+
         // 사용자 비밀에서 DB 연결 문자열을 한 번 읽어 재사용
         private static readonly string DbConnectionString = new ConfigurationBuilder()
                 .AddUserSecrets<MainForm>(optional: true)

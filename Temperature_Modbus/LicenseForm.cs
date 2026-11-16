@@ -1,4 +1,12 @@
-﻿using System.ComponentModel;
+﻿// NuGet 패키지의 라이선스 목록과 원문 파일을 수집하는 도구
+//dotnet tool install --global nuget-license
+
+// 프로젝트 최상위 폴더에서 실행.
+// dotnet restore
+// nuget-license -i .\Temperature_Modbus\Temperature_Modbus.csproj -t -d .\Temperature_Modbus\Licenses -o JsonPretty -fo .\Temperature_Modbus\licenses.json
+
+
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Text.Json;
 
