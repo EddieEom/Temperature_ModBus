@@ -150,3 +150,7 @@ erDiagram
 | 자동 재연결·발송 자동 재시도 | 현재 사용자 재연결 및 단일 발송 시도 방식 |
 
 구현 근거는 [MainForm.cs](../Temperature_Modbus/MainForm.cs)와 [SQL 폴더](../SQL)입니다.
+
+## 설계표와 시험 화면의 연결
+
+설계표에서 Device의 MacAddress는 DHCP로 IP가 바뀌어도 같은 장비를 식별하기 위한 고유 값이고 LastKnownIp와 TcpPort는 접속 정보입니다. AlarmEvent의 bigint AlarmId는 그리드에서 선택한 행을 식별하며 AlarmNotification에서는 같은 값을 기본 키와 외래 키로 사용합니다. 이 관계 덕분에 18번의 ‘발송 대기’ 화면과 최종 ‘발송 성공’ 이력, 실제 수신 메시지를 한 건으로 추적할 수 있었습니다. [시험 기록](verification.md)
