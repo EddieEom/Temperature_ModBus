@@ -4,6 +4,63 @@ PT100 온도센서와 SIG-5560을 연결하고, C# WinForms에서 Modbus/TCP로 
 
 장비 연결을 먼저 확인한 뒤 단건 온도 수신, 주기 수집, 알람 판정, DB 저장, 알림 발송 순서로 구현했습니다. 실제 시험에서는 25.0℃ 수신과 93.6℃ 고온 알람 발생, 작업자 확인, 정상 복귀, 카카오 발송 및 이력 조회를 대조했습니다.
 
+## 실장비 시험 화면
+
+**TCP 연결 후 PT100 센서에서 25.0℃를 수신한 화면**
+
+![TCP 연결 후 PT100 센서에서 25.0℃를 수신한 화면](docs/images/monitoring/normal-reading.png)
+
+<details>
+<summary>연결 준비와 온도 판정</summary>
+
+**장비 1대가 DB에 등록된 상태에서 TCP 연결을 기다리는 화면**
+
+![장비 1대가 DB에 등록된 상태에서 TCP 연결을 기다리는 화면](docs/images/monitoring/database-connected.png)
+
+**장비 미연결 시 현재 온도와 정상 수신 대기 표시**
+
+![장비 미연결 시 현재 온도와 정상 수신 대기 표시](docs/images/monitoring/waiting-for-reading.png)
+
+**90.0℃ 수신 시 고온 판정 2/3과 최근 온도 추이**
+
+![90.0℃ 수신 시 고온 판정 2/3과 최근 온도 추이](docs/images/monitoring/high-temperature-count.png)
+
+</details>
+
+<details>
+<summary>고온 알람 확인·이력·카카오 수신</summary>
+
+**93.6℃ 고온 알람의 사용자 확인 완료와 카카오 발송 성공**
+
+![93.6℃ 고온 알람의 사용자 확인 완료와 카카오 발송 성공](docs/images/alarms/acknowledged.png)
+
+**기간과 유형으로 조회한 알람 19건의 발생·확인·복귀 이력**
+
+![기간과 유형으로 조회한 알람 19건의 발생·확인·복귀 이력](docs/images/alarms/alarm-history.png)
+
+**카카오톡에서 확인한 고온 알람 17~19번 메시지**
+
+![카카오톡에서 확인한 고온 알람 17~19번 메시지](docs/images/kakao/received-messages.png)
+
+</details>
+
+<details>
+<summary>DB 설계·카카오 권한·라이선스</summary>
+
+**장비·알람·발송 결과를 연결하는 DB 설계표**
+
+![장비·알람·발송 결과를 연결하는 DB 설계표](docs/images/design/database-schema.png)
+
+**카카오 메시지 전송 권한 talk_message의 이용 중 동의 설정**
+
+![카카오 메시지 전송 권한 talk_message의 이용 중 동의 설정](docs/images/kakao/message-permission.png)
+
+**패키지 58개의 라이선스 목록과 원문 누락 9개 표시**
+
+![패키지 58개의 라이선스 목록과 원문 누락 9개 표시](docs/images/licenses/package-viewer.png)
+
+</details>
+
 ## 개발 기록
 
 | 문서 | 담은 내용 |
